@@ -55,3 +55,29 @@ Lately I've also been looking into [Radio Trunking](https://en.wikipedia.org/wik
 The theory is, no pun intended here, is that using Game Theory, the witness then has to offer honest monitoring services in order to maximixe the end user's revenue. 
 
 There needs to be a prototype system using smart contracts via Ethereum, if we are ever going to realize this witness model, and of course the SLA enforcement lifecycle.
+
+## Things to work out 
+
+* Violations Confirmation: (Violation Confirmation, is the the result of a strategy profile in a `N-witness game`, the service violation
+is confirmed, only when `WReport` > || `M` where `1` `< N/2 < M < N, N, M`. Otherwise, it is treated as if there was no violation, in which case makes the witness method moot. 
+
+<img width="530" alt="algo" src="https://user-images.githubusercontent.com/20936398/144744417-2c1804a6-2b2a-465e-95e6-3d54ab5b39c4.png">
+
+## Truffle 
+
+Using similar `git` methodology, I ran: 
+
+```bash
+truffle init
+```
+
+This initialize an empty Ethereum project in the current folder structured as:
+
+```bash
+├── app
+│   ├── contracts/
+│   │   ├── migrations/
+│   ├── test/
+│   ├── montanascripts/
+│   ├── truffle-config.js
+```
