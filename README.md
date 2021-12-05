@@ -16,7 +16,7 @@ In addition, an unbiased sortition algorithm is proposed to ensure the randomnes
 
 After hours of research, I found that **Efficient Distributed Sharding (EDS)** would be an innovative sharding scheme that makes shards sufficiently large and strongly bias-resistant via a combination of a client-server randomness scavenging mechanism and leader election via cryptographic sortition.
 
-## Sortition Sample 
+## Sortition sample 
 
 ```sol
    function montanaSmartContract() public view {
@@ -50,7 +50,7 @@ Lately I've also been looking into [Radio Trunking](https://en.wikipedia.org/wik
 
 <img width="607" alt="witnesses" src="https://user-images.githubusercontent.com/20936398/144744243-fbddac4d-fcaa-4939-ad71-f474144f9469.png">
 
-## Practical Implementation 
+## Practical implementation 
 
 The theory is, no pun intended here, is that using Game Theory, the witness then has to offer honest monitoring services in order to maximixe the end user's revenue. 
 
