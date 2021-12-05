@@ -71,7 +71,7 @@ Using similar `git` methodology, I ran:
 truffle init
 ```
 
-This initialize an empty Ethereum project in the current folder structured as:
+This initializes an empty Ethereum project in the current folder structured as:
 
 ```bash
 ├── app
