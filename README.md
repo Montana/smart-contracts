@@ -15,3 +15,43 @@ Witnesses gain revenue as an incentive for performing these duties, and the payo
 In addition, an unbiased sortition algorithm is proposed to ensure the randomness of the independent witnesses selection from the decentralized witness pool, to avoid possible unfairness or collusion. An auditing mechanism is also introduced in the paper to detect potential irrational or malicious witnesses.
 
 After hours of research, I found that **Efficient Distributed Sharding (EDS)** would be an innovative sharding scheme that makes shards sufficiently large and strongly bias-resistant via a combination of a client-server randomness scavenging mechanism and leader election via cryptographic sortition.
+
+## Sortition Sample 
+
+```sol
+   function montanaSmartContract() public view {
+        uint256 p;
+        uint256 root;
+        uint8 i;
+        uint256 a;
+
+        // a > p for small p
+        for (i = 0; i < smallOddPrimes.length; i++) {
+            p = smallOddPrimes[i];
+            for (a = p + 1; a < p + 10; a++) {
+                root = a.modSqrt(p);
+                if (root != 0) {
+                    require(
+                        a % p == (root * root) % p,
+                        "Invalid modular square root for a > p"
+                    );
+                }
+            }
+        }
+    }
+}
+```
+
+There's obviously still methods I can use that seem familiar from JavaScript, like `slice()`. 
+
+## The Parallels of Witnesses and Radio Trunking 
+
+Lately I've also been looking into [Radio Trunking](https://en.wikipedia.org/wiki/Trunking) and how that works. You'll see in this diagram, the parallels are certainly there:
+
+<img width="607" alt="witnesses" src="https://user-images.githubusercontent.com/20936398/144744243-fbddac4d-fcaa-4939-ad71-f474144f9469.png">
+
+## Practical Implementation 
+
+The theory is, no pun intended here, is that using Game Theory, the witness then has to offer honest monitoring services in order to maximixe the end user's revenue. 
+
+There needs to be a prototype system using smart contracts via Ethereum, if we are ever going to realize this witness model, and of course the SLA enforcement lifecycle.
