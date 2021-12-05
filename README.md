@@ -13,3 +13,5 @@ The emerging blockchain technique brings in an immutable solution for tracking t
 Witnesses gain revenue as an incentive for performing these duties, and the payoff function is carefully designed in a way that trustworthiness is guaranteed: in order to get the maximum profit, the witness has to always tell the truth.
 
 In addition, an unbiased sortition algorithm is proposed to ensure the randomness of the independent witnesses selection from the decentralized witness pool, to avoid possible unfairness or collusion. An auditing mechanism is also introduced in the paper to detect potential irrational or malicious witnesses.
+
+After hours of research, I found that **Efficient Distributed Sharding (EDS)** would be an innovative sharding scheme that makes shards sufficiently large and strongly bias-resistant via a combination of a client-server randomness scavenging mechanism and leader election via cryptographic sortition.
