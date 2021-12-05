@@ -92,3 +92,8 @@ contract("Testing MontanaContract", accounts => {
     it("Should test the constructor", function() {});
 });
 ```
+When you call a smart contract function with Web3 you get as result a `JavaScript Promise object`:
+* `const promise = contract.function_name(params);`
+
+When a Promise is completed, we can use its result within the _then_ statement:
+* `promise.then( (result) => {// use your result here})`
