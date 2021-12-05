@@ -81,3 +81,14 @@ This initialize an empty Ethereum project in the current folder structured as:
 │   ├── montanascripts/
 │   ├── truffle-config.js
 ```
+## Promise testing 
+
+Some sample JS code I quickly wrote out: 
+
+```javascript
+const MontanaContract = artifacts.require("MontanaContract");
+contract("Testing MontanaContract", accounts => {
+    // test the constructor
+    it("Should test the constructor", function() {});
+});
+```
